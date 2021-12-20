@@ -1,0 +1,8 @@
+ecomail_webform.admin:
+  path: 'admin/config/services/ecomail_webform'
+  defaults:
+    _form: '\Drupal\ecomail_webform\Form\EcomailAdminSettingsForm'
+    _title: 'Ecomail'
+  requirements:
+    _permission: 'administer ecomail_webform'
+

@@ -1,0 +1,4 @@
+services:
+  ecomail_webform.ecomail:
+    class: Drupal\ecomail_webform\Ecomail
+    arguments: ['@config.factory', '@logger.factory']

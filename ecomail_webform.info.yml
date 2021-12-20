@@ -1,0 +1,14 @@
+name: 'Ecomail webform'
+type: module
+description: 'Ecomail webform intergation.'
+# core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Custom'
+dependencies:
+  - webform
+
+# Information added by Drupal.org packaging script on 2019-07-19
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'ecomail_webform'
+datestamp: 1563545005

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains ecomail_webform.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ecomail_webform_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ecomail module.
+    case 'help.page.ecomail_webform':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Ecomail webform intergation.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ecomail_webform_theme($existing, $type, $theme, $path) {
+  return [
+    'subscriber_data_examples' => [
+      'variables' => [],
+    ],
+  ];
+}

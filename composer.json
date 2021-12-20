@@ -1,0 +1,18 @@
+{
+    "name": "drupal/ecomail_webform",
+    "type": "drupal-module",
+    "description": "Ecomail intergation.",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0+",
+    "homepage": "https://www.drupal.org/project/ecomail_webform",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/ecomail_webform",
+        "source": "http://cgit.drupalcode.org/ecomail_webform"
+    },
+    "repositories": {
+    },
+    "require": {
+        "ecomailcz/ecomail": "dev-master"
+    }
+}

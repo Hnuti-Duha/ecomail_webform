@@ -1,0 +1,4 @@
+ecomail_webform.admin:
+  route_name: ecomail_webform.admin
+  base_route: ecomail_webform.admin
+  title: 'Ecomail Global Settings'

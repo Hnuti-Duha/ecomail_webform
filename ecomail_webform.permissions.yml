@@ -1,0 +1,4 @@
+administer ecomail_webform:
+  title: 'administer ecomail_webform'
+  description: 'Access the ecomail webform configuration options.'
+  restrict access: TRUE
