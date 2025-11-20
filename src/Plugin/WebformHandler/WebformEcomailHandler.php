@@ -2,6 +2,7 @@
 
 namespace Drupal\ecomail_webform\Plugin\WebformHandler;
 
+use Countable;
 use Drupal\Component\Serialization\Json;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
@@ -205,10 +206,12 @@ class WebformEcomailHandler extends WebformHandlerBase {
     $tags = Yaml::decode($configuration['tags']);
 
     $data = [];
-    if (count($subscriber_data) > 0) {
-      foreach ($subscriber_data as $ecomail_field => $webform_field) {
-        if (isset($fields['data'][$webform_field])) {
-          $data[$ecomail_field] = $fields['data'][$webform_field];
+    if (is_array($subscriber_data) || $subscriber_data instanceof Countable) {
+      if (count($subscriber_data) > 0) {
+        foreach ($subscriber_data as $ecomail_field => $webform_field) {
+          if (isset($fields['data'][$webform_field])) {
+            $data[$ecomail_field] = $fields['data'][$webform_field];
+          }
         }
       }
     }
