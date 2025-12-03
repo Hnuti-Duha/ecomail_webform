@@ -236,6 +236,7 @@ class WebformEcomailHandler extends WebformHandlerBase {
 
     $request_data = [
       'subscriber_data' => $data,
+      'update_existing' => true
     ];
 
     $result = $this->ecomail->addSubscriber($configuration['list'], $request_data);
